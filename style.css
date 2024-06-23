@@ -1,0 +1,433 @@
+* {
+    padding: 0px;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.index-body {
+    background-color: black;
+    
+}
+
+.index-nav{
+    padding: 15px 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.index-nav .index-nav-side {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-nav .netflix-logo {
+    fill: red;
+    height: 40px;
+}
+
+.select-language svg{
+    fill: white;
+    height: 15px;
+}
+
+.select-language svg:first-child{
+    transform: translateX(25px);
+}
+
+.select-language svg:last-child{
+    transform: translateX(-25px);
+}
+
+.select-language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-language select {
+     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 120px;
+    padding: 5px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border-radius: 3px;
+    border: 1px solid gray;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.select-language select:focus{
+    outline: 1.5px solid white;
+    outline-offset: 4px;
+}
+
+.select-language select:focus option{
+    color: black;
+}
+.sign-btn {
+    background-color: red;
+    padding: 7px 14px;
+    border-radius: 5px;
+    border:none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.sign-btn:hover{
+    background-color: rgb(175, 5, 5);
+}
+
+.index-body h1,
+.index-body p {
+    color: white;
+}
+
+.hero-container {
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.8500) 3.000%, rgba(0, 0, 0, 0.8465) 11.08%, rgba(0, 0, 0, 0.8361) 19.17%, rgba(0, 0, 0, 0.8187) 27.25%, rgba(0, 0, 0, 0.7944) 35.33%, rgba(0, 0, 0, 0.7632) 43.42%, rgba(0, 0, 0, 0.7250) 51.50%, rgba(0, 0, 0, 0.6868) 59.58%, rgba(0, 0, 0, 0.6556) 67.67%, rgba(0, 0, 0, 0.6313) 75.75%, rgba(0, 0, 0, 0.6139) 83.83%, rgba(0, 0, 0, 0.6035) 91.92%, rgba(0, 0, 0, 0.6000) 100.0%),url(./images/netflix\ bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translateY(-70px);
+    position: relative;
+    z-index: -1;
+}
+
+.hero{
+    width:600px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.email-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    
+}
+
+.formField {
+    margin: 10px;
+    position: relative;
+}
+  
+.formField input {
+    padding: 20px 15px 10px 15px;
+    width: 20vw;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+    font-weight: 550;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 0 5px transparent;
+}
+  
+.formField input:hover,
+.formField input:focus {
+    box-shadow: 0 0 0 2px #333;
+}
+  
+.formField span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 13px 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+  
+.formField input:focus + span,
+.formField input:valid + span {
+    transform: translateY(-12px) translateX(-5px) scale(0.95);
+    transition: 0.3s ease-in-out;
+}
+
+.formField {
+    margin: 10px;
+    position: relative;
+}
+  
+.formField input {
+    padding: 20px 15px 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.758);
+    color: #333;
+    font-size: 16px;
+    font-weight: 550;
+    transition: all 0.1s ease-in-out;
+}
+  
+.formField input:focus {
+    outline: 1px solid white;
+    outline-offset: 3px;
+}
+  
+.formField span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 13px 15px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+    pointer-events: none;
+}
+  
+.formField input:focus + span,
+.formField input:valid + span {
+    transform: translateY(-12px) translateX(-5px) scale(0.95);
+    transition: 0.3s ease-in-out;
+}
+
+.sign-svg-btn button{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 3px;
+    border: none;
+    background-color:red;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.sign-svg-btn svg{
+    fill: white;
+
+}
+
+.hero p:nth-child(2){
+    font-size: 20px;
+}
+
+.curve{
+    height: 50px;
+    width: 100%;
+    border-top: 5px solid #b30062;
+    border-top-left-radius: 40% 100%;
+    border-top-right-radius: 40% 100%;
+    background: linear-gradient(to bottom, #00224D 20%, black);
+    transform: translateY(-110px);
+}   
+
+.plans-container,
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans-container h2,.reasons h2 ,.question-cont h2 ,.question-cont h3 {
+    color: white;
+}
+
+.plan-heading .plan,
+.reason-box{
+    width: 25%;
+    height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: #9e274a;
+    cursor: pointer;
+}
+
+.faqs-cont {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.plan-heading .plan:hover{
+    background-color: #6f0b29;
+}
+
+.plan-heading,
+.reasons,
+.question-cont,
+.footer-data{
+    padding: 15px 10%;
+}
+
+.plan-heading > h2, .reasons > h2,.question-cont > h2{
+    margin-bottom: 20px;
+}
+
+.plan-heading .select-plan,
+.reasons-container{
+    display: flex;
+    gap:10px;
+    
+}
+
+.reason-box{
+    background: linear-gradient(to bottom right, #0A1D56, #891652);
+    height: 240px;
+    justify-content: flex-start;
+    gap:20px;
+    position: relative;
+}
+
+.reason-box svg{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.Question svg {
+    fill: white;
+    height: 30px;
+    width: 30px;
+    transition: all 0.1s ease-in-out;
+}
+
+.faqs .Question {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.faqs svg {
+    margin-left: auto;
+}
+
+.faqs .Question:hover{
+    background-color: rgb(107, 107, 107);
+
+}
+
+.faqs .Question ,
+.faqs .answer{
+    padding: 20px;
+    background-color:rgb(49, 48, 48);
+    
+}
+
+footer .email-section {
+    justify-content: flex-start;
+}
+
+footer .email-section .formField{
+    margin-left: 0;
+}
+
+.footer-data2 ul{
+    display: grid;
+    gap: 20px;
+    grid-template: repeat(4, auto)/repeat(4, 1fr);
+    justify-content: space-evenly;
+    align-items: center; 
+    list-style: none;
+    
+}
+
+.footer-data2  a {
+    color:white;
+}
+
+.footer-data2{
+    margin-top: 20px;
+    padding:10px 3%;
+    display: flex;
+    gap:35px;
+    flex-direction: column;
+}
+
+.footer-data2 .select-language {
+    justify-content: flex-start;
+    transform: translateX(-15px);
+}
+
+.answer {
+    transition: all 0.2ss ease;
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+
+
+
+
+@media (max-width:800px) {
+    
+
+    .select-plan {
+        flex-direction: column;
+    }
+
+    .select-plan .plan {
+        width: 100%;
+    }
+    .reasons-container{
+        flex-direction:column;
+    }
+    .reasons-container .reason-box{
+        width: 100%;
+        flex: wrap;
+    }
+}
+
+@media (max-width:400px) {
+    
+
+    .select-plan {
+        flex-direction: column;
+    }
+
+    .select-plan .plan {
+        width: 100%;
+    }
+    .reasons-container{
+        flex-direction:column;
+    }
+    .reasons-container .reason-box{
+        width: 100%;
+        flex: wrap;
+    }
+}
